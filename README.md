@@ -27,27 +27,24 @@ You can learn more about
 [Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) on the
 official ESLint website.
 
-To use the JavaScript Standard Style shareable config, first install it:
+To use the JavaScript Standard Style shareable config, first run this:
 
 ```bash
-npm install eslint-config-standard
+npm install eslint-config-standard eslint-plugin-react
 ```
+
+*Note: "eslint-plugin-react" is only required because of an
+[ESLint bug](https://github.com/eslint/eslint/issues/2518).*
 
 Then, add this to your .eslintrc file:
-
-```
-{
-  "extends": "eslint-config-standard"
-}
-```
-
-You can also omit the `eslint-config-` and it will be automatically assumed by ESLint:
 
 ```
 {
   "extends": "standard"
 }
 ```
+
+*Note: We omitted the `eslint-config-` prefix since it is automatically assumed by ESLint.*
 
 You can override settings from the shareable config by adding them directly into your
 `.eslintrc` file.
