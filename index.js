@@ -46,7 +46,7 @@ module.exports = {
     'handle-callback-err': [2, '^(err|error|anySpecificError)$' ],
     'indent': [2, 2],
     'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
-    'linebreak-style': [2, 'unix'],
+    'linebreak-style': 0,
     'max-depth': 0,
     'max-len': 0,
     'max-nested-callbacks': 0,
