@@ -12,6 +12,8 @@
 
 #### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [JavaScript Standard Style](https://github.com/feross/standard)
 
+This module is for advanced users. You probably want to use [`standard`](https://github.com/feross/standard) instead :)
+
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ## Install
@@ -32,9 +34,6 @@ To use the JavaScript Standard Style shareable config, first run this:
 ```bash
 npm install eslint-config-standard eslint-plugin-react
 ```
-
-*Note: "eslint-plugin-react" is only required because of an
-[ESLint bug](https://github.com/eslint/eslint/issues/2518).*
 
 Then, add this to your .eslintrc file:
 
