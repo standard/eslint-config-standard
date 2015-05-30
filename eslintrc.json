@@ -1,7 +1,8 @@
 {
   "ecmaFeatures": {
     "globalReturn": true,
-    "jsx": true
+    "jsx": true,
+    "modules": true
   },
 
   "env": {
