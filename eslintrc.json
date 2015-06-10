@@ -1,6 +1,5 @@
 {
   "ecmaFeatures": {
-    "jsx": true,
     "modules": true
   },
 
@@ -17,10 +16,6 @@
     "unescape": false,
     "window": false
   },
-
-  "plugins": [
-    "react"
-  ],
 
   "rules": {
     "block-scoped-var": 0,
@@ -154,23 +149,6 @@
     "quote-props": 0,
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
-    "react/display-name": 0,
-    "react/jsx-boolean-value": 2,
-    "react/jsx-no-undef": 2,
-    "react/jsx-quotes": [2, "single", "avoid-escape"],
-    "react/jsx-sort-prop-types": 0,
-    "react/jsx-sort-props": 0,
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/no-did-mount-set-state": 2,
-    "react/no-did-update-set-state": 2,
-    "react/no-multi-comp": 0,
-    "react/no-unknown-property": 2,
-    "react/prop-types": 2,
-    "react/react-in-jsx-scope": 2,
-    "react/self-closing-comp": 2,
-    "react/sort-comp": 0,
-    "react/wrap-multilines": 2,
     "semi": [2, "never"],
     "semi-spacing": 0,
     "sort-vars": 0,
