@@ -144,7 +144,7 @@
     "no-with": 2,
     "no-wrap-func": 2,
     "object-curly-spacing": 0,
-    "one-var": 0,
+    "one-var": [2, { "initialized": "never" }],
     "operator-assignment": 0,
     "operator-linebreak": [2, "after"],
     "padded-blocks": 0,
