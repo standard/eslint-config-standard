@@ -36,7 +36,7 @@
     "func-style": 0,
     "generator-star-spacing": [2, "both"],
     "guard-for-in": 0,
-    "handle-callback-err": [2, "^(err|error|anySpecificError)$" ],
+    "handle-callback-err": [2, "^(err|error)$" ],
     "indent": [2, 2],
     "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
     "linebreak-style": 0,
