@@ -126,6 +126,7 @@
     "no-sparse-arrays": 2,
     "no-sync": 0,
     "no-ternary": 0,
+    "no-this-before-super": 2,
     "no-throw-literal": 2,
     "no-trailing-spaces": 2,
     "no-undef": 2,
