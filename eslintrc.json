@@ -62,6 +62,7 @@
     "no-bitwise": 0,
     "no-caller": 2,
     "no-catch-shadow": 0,
+    "no-class-assign": 2,
     "no-comma-dangle": 0,
     "no-cond-assign": 2,
     "no-console": 0,
