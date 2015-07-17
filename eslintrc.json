@@ -168,6 +168,7 @@
     "quote-props": 0,
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
+    "require-yield": 2,
     "semi": [2, "never"],
     "semi-spacing": 0,
     "sort-vars": 0,
