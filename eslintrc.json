@@ -19,6 +19,7 @@
     "accessor-pairs": 2,
     "array-bracket-spacing": 0,
     "arrow-parens": 0,
+    "arrow-spacing": [2, { "before": true, "after": true }],
     "block-scoped-var": 0,
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
     "callback-return": 0,
