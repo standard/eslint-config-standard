@@ -11,7 +11,7 @@
     "url": "https://github.com/feross/eslint-config-standard/issues"
   },
   "peerDependencies": {
-    "eslint": ">=0.24.1 || ^1.0.0-rc-1"
+    "eslint": "^1.0.0-rc-1"
   },
   "devDependencies": {
     "tape": "^4.0.0"
