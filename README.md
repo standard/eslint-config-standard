@@ -32,7 +32,7 @@ official ESLint website.
 To use the JavaScript Standard Style shareable config, first run this:
 
 ```bash
-npm install eslint-config-standard
+npm install eslint-config-standard eslint-plugin-standard
 ```
 
 Then, add this to your .eslintrc file:
