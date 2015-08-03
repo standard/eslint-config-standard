@@ -15,6 +15,8 @@
     "eslint-plugin-standard": "^1.1.0"
   },
   "devDependencies": {
+    "eslint": "^1.0.0",
+    "eslint-plugin-standard": "^1.1.0",
     "tape": "^4.0.0"
   },
   "homepage": "https://github.com/feross/eslint-config-standard",
