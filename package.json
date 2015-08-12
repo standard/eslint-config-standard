@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-standard",
   "description": "JavaScript Standard Style - ESLint Shareable Config",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
