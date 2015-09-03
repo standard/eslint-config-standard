@@ -103,7 +103,6 @@
     "no-unreachable": 2,
     "no-unused-vars": [2, { "vars": "all", "args": "none" }],
     "no-useless-call": 2,
-    "no-useless-concat": 2,
     "no-with": 2,
     "one-var": [2, { "initialized": "never" }],
     "operator-linebreak": [2, "after", { "overrides": { "?": "before", ":": "before" } }],
