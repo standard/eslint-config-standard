@@ -11,7 +11,6 @@
     "url": "https://github.com/feross/eslint-config-standard/issues"
   },
   "peerDependencies": {
-    "eslint": "^1.0.0",
     "eslint-plugin-standard": "^1.1.0"
   },
   "devDependencies": {
