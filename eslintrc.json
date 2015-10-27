@@ -23,6 +23,7 @@
   "rules": {
     "accessor-pairs": 2,
     "arrow-spacing": [2, { "before": true, "after": true }],
+    "arrow-parens":  [2, "as-needed"],
     "block-spacing": [2, "always"],
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
     "comma-dangle": [2, "never"],
