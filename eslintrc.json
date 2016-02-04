@@ -71,7 +71,7 @@
     "no-iterator": 2,
     "no-label-var": 2,
     "no-labels": 2,
-    "no-labels": [2, { "allowLoop": true, "allowSwitch": true }],
+    "no-labels": [2, { "allowLoop": false, "allowSwitch": false }],
     "no-lone-blocks": 2,
     "no-mixed-spaces-and-tabs": 2,
     "no-multi-spaces": 2,
