@@ -127,6 +127,8 @@
     "yield-star-spacing": [2, "both"],
     "yoda": [2, "never"],
 
+    "promiseparams/promiseparams": 2,
+
     "standard/object-curly-even-spacing": [2, "either"],
     "standard/array-bracket-even-spacing": [2, "either"],
     "standard/computed-property-even-spacing": [2, "even"]
