@@ -25,6 +25,7 @@
 
   "rules": {
     "accessor-pairs": 2,
+    "arrow-parens": [2, "always"],
     "arrow-spacing": [2, { "before": true, "after": true }],
     "block-spacing": [2, "always"],
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
