@@ -10,11 +10,11 @@
 [downloads-image]: https://img.shields.io/npm/dm/eslint-config-standard.svg
 [downloads-url]: https://npmjs.org/package/eslint-config-standard
 
-#### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [JavaScript Standard Style](https://github.com/feross/standard)
+#### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [JavaScript Standard Style](http://standardjs.com)
 
-This module is for advanced users. You probably want to use [`standard`](https://github.com/feross/standard) instead :)
+This module is for advanced users. You probably want to use [`standard`](http://standardjs.com) instead :)
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
 
 ## Install
 
@@ -32,7 +32,7 @@ official ESLint website.
 To use the JavaScript Standard Style shareable config, first run this:
 
 ```bash
-npm install eslint-config-standard eslint-plugin-standard
+npm install eslint-config-standard eslint-plugin-standard eslint-plugin-promise
 ```
 
 Then, add this to your .eslintrc file:
@@ -51,7 +51,7 @@ You can override settings from the shareable config by adding them directly into
 ### Looking for something easier than this?
 
 The easiest way to use JavaScript Standard Style to check your code is to use the
-[`standard`](https://github.com/feross/standard) package. This comes with a global
+[`standard`](http://standardjs.com) package. This comes with a global
 Node command line program (`standard`) that you can run or add to your `npm test` script
 to quickly check your style.
 
@@ -60,22 +60,22 @@ to quickly check your style.
 Use this in one of your projects? Include one of these badges in your readme to
 let people know that your code is using the standard style.
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
 
 ```markdown
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
 ```
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
 ```markdown
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 ```
 
 ## Learn more
 
 For the full listing of rules, editor plugins, FAQs, and more, visit the main
-[JavaScript Standard Style repo](https://github.com/feross/standard).
+[JavaScript Standard Style repo](http://standardjs.com).
 
 ## License
 
