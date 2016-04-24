@@ -109,6 +109,7 @@
     "no-undef": 2,
     "no-undef-init": 2,
     "no-unexpected-multiline": 2,
+    "no-unmodified-loop-condition": 2,
     "no-unneeded-ternary": [2, { "defaultAssignment": false }],
     "no-unreachable": 2,
     "no-unused-vars": [2, { "vars": "all", "args": "none" }],
