@@ -126,6 +126,7 @@
     "operator-linebreak": [2, "after", { "overrides": { "?": "before", ":": "before" } }],
     "padded-blocks": [2, "never"],
     "quotes": [2, "single", "avoid-escape"],
+    "rest-spread-spacing": [2, "never"],
     "semi": [2, "never"],
     "semi-spacing": [2, { "before": false, "after": true }],
     "space-before-blocks": [2, "always"],
