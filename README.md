@@ -19,7 +19,7 @@ This module is for advanced users. You probably want to use [`standard`](http://
 ## Install
 
 ```bash
-npm install eslint-config-standard
+npm install eslint-config-standard --save-dev
 ```
 
 ## Usage
