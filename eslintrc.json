@@ -37,7 +37,7 @@
     "curly": [2, "multi-line"],
     "dot-location": [2, "property"],
     "eol-last": 2,
-    "eqeqeq": [2, "allow-null"],
+    "eqeqeq": [2, "always", {"null": "ignore"}],
     "func-call-spacing": [2, "never"],
     "handle-callback-err": [2, "^(err|error)$" ],
     "indent": [2, 2, { "SwitchCase": 1 }],
