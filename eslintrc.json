@@ -49,6 +49,7 @@
     "no-caller": 2,
     "no-class-assign": 2,
     "no-cond-assign": 2,
+    "no-console": 0,
     "no-const-assign": 2,
     "no-constant-condition": [2, { "checkLoops": false }],
     "no-control-regex": 2,
