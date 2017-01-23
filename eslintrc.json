@@ -14,6 +14,7 @@
   },
 
   "plugins": [
+    "ava",
     "standard",
     "promise"
   ],
@@ -151,5 +152,7 @@
     "standard/computed-property-even-spacing": [2, "even"],
 
     "promise/param-names": 2
-  }
+  },
+
+  "extends": "plugin:ava/recommended"
 }
