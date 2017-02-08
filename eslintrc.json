@@ -66,6 +66,7 @@
     "no-extend-native": "error",
     "no-extra-bind": "error",
     "no-extra-boolean-cast": "error",
+    "no-extra-label": "error",
     "no-extra-parens": ["error", "functions"],
     "no-fallthrough": "error",
     "no-floating-decimal": "error",
