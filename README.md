@@ -14,7 +14,7 @@
 
 This module is for advanced users. You probably want to use [`standard`](http://standardjs.com) instead :)
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+[![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
 
 ## Install
 
