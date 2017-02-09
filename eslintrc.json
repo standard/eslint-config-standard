@@ -155,6 +155,7 @@
       "line": { "markers": ["*package", "!", "/", ","] },
       "block": { "balanced": true, "markers": ["*package", "!", ","], "exceptions": ["*"] }
     }],
+    "symbol-description": "error",
     "template-curly-spacing": ["error", "never"],
     "template-tag-spacing": ["error", "never"],
     "unicode-bom": ["error", "never"],
