@@ -134,6 +134,7 @@
     "no-useless-constructor": "error",
     "no-useless-escape": "error",
     "no-useless-rename": "error",
+    "no-useless-return": "error",
     "no-whitespace-before-property": "error",
     "no-with": "error",
     "object-property-newline": ["error", { "allowMultiplePropertiesPerLine": true }],
