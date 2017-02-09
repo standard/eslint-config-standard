@@ -154,7 +154,7 @@
     "space-unary-ops": ["error", { "words": true, "nonwords": false }],
     "spaced-comment": ["error", "always", {
       "line": { "markers": ["*package", "!", "/", ","] },
-      "block": { "balanced": true, "markers": ["*package", "!", ","], "exceptions": ["*"] }
+      "block": { "balanced": true, "markers": ["*package", "!", ",", ":", "::", "flow-include"], "exceptions": ["*"] }
     }],
     "symbol-description": "error",
     "template-curly-spacing": ["error", "never"],
