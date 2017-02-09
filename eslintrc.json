@@ -127,6 +127,7 @@
     "no-unreachable": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
+    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
     "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
     "no-useless-call": "error",
     "no-useless-computed-key": "error",
