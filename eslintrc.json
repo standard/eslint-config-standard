@@ -156,7 +156,7 @@
     "template-tag-spacing": ["error", "never"],
     "unicode-bom": ["error", "never"],
     "use-isnan": "error",
-    "valid-typeof": "error",
+    "valid-typeof": ["error", { "requireStringLiterals": true }],
     "wrap-iife": ["error", "any", { "functionPrototypeMethods": true }],
     "yield-star-spacing": ["error", "both"],
     "yoda": ["error", "never"],
