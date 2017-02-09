@@ -39,6 +39,7 @@
     "eol-last": "error",
     "eqeqeq": ["error", "always", { "null": "ignore" }],
     "func-call-spacing": ["error", "never"],
+    "generator-star-spacing": ["error", { "before": true, "after": true }],
     "handle-callback-err": ["error", "^(err|error)$" ],
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
