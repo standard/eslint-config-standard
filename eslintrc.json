@@ -82,13 +82,13 @@
     "no-labels": ["error", { "allowLoop": false, "allowSwitch": false }],
     "no-lone-blocks": "error",
     "no-mixed-operators": ["error", {
-        "groups": [
-            ["+", "-", "*", "/", "%", "**"],
-            ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-            ["&&", "||"],
-            ["in", "instanceof"]
-        ],
-        "allowSamePrecedence": true
+      "groups": [
+        ["+", "-", "*", "/", "%", "**"],
+        ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+        ["&&", "||"],
+        ["in", "instanceof"]
+      ],
+      "allowSamePrecedence": true
     }],
     "no-mixed-spaces-and-tabs": "error",
     "no-multi-spaces": "error",
