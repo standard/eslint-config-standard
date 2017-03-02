@@ -175,6 +175,7 @@
 
     "import/export": "error",
     "import/first": "error",
+    "import/no-absolute-path": "error",
     "import/no-duplicates": "error",
 
     "promise/param-names": "error",
