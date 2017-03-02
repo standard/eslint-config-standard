@@ -15,6 +15,7 @@
 
   "plugins": [
     "import",
+    "node",
     "promise",
     "standard"
   ],
@@ -178,6 +179,8 @@
     "import/no-absolute-path": "error",
     "import/no-duplicates": "error",
     "import/no-webpack-loader-syntax": "error",
+
+    "node/no-deprecated-api": "error",
 
     "promise/param-names": "error",
 
