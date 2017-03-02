@@ -173,6 +173,7 @@
     "yield-star-spacing": ["error", "both"],
     "yoda": ["error", "never"],
 
+    "import/export": "error",
     "import/no-duplicates": "error",
 
     "promise/param-names": "error",
