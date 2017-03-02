@@ -14,8 +14,9 @@
   },
 
   "plugins": [
-    "standard",
-    "promise"
+    "import",
+    "promise",
+    "standard"
   ],
 
   "globals": {
@@ -65,7 +66,6 @@
     "no-dupe-class-members": "error",
     "no-dupe-keys": "error",
     "no-duplicate-case": "error",
-    "no-duplicate-imports": "error",
     "no-empty-character-class": "error",
     "no-empty-pattern": "error",
     "no-eval": "error",
@@ -173,10 +173,12 @@
     "yield-star-spacing": ["error", "both"],
     "yoda": ["error", "never"],
 
+    "import/no-duplicates": "error",
+
+    "promise/param-names": "error",
+
     "standard/object-curly-even-spacing": ["error", "either"],
     "standard/array-bracket-even-spacing": ["error", "either"],
-    "standard/computed-property-even-spacing": ["error", "even"],
-
-    "promise/param-names": "error"
+    "standard/computed-property-even-spacing": ["error", "even"]
   }
 }
