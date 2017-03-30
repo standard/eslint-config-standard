@@ -11,11 +11,11 @@
 
 #### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [JavaScript Standard Style](http://standardjs.com)
 
-This module is for advanced users. You probably want to use [`standard`](http://standardjs.com) instead :)
-
 [![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
 
 ## Install
+
+This module is for advanced users. You probably want to use [`standard`](http://standardjs.com) instead :)
 
 ```bash
 npm install eslint-config-standard
