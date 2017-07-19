@@ -1,7 +1,7 @@
 # eslint-config-standard [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
-[travis-image]: https://img.shields.io/travis/feross/eslint-config-standard/master.svg
-[travis-url]: https://travis-ci.org/feross/eslint-config-standard
+[travis-image]: https://img.shields.io/travis/standard/eslint-config-standard/master.svg
+[travis-url]: https://travis-ci.org/standard/eslint-config-standard
 [npm-image]: https://img.shields.io/npm/v/eslint-config-standard.svg
 [npm-url]: https://npmjs.org/package/eslint-config-standard
 [downloads-image]: https://img.shields.io/npm/dm/eslint-config-standard.svg
@@ -11,7 +11,7 @@
 
 #### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [JavaScript Standard Style](http://standardjs.com)
 
-[![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+[![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
 ## Install
 
@@ -59,10 +59,10 @@ to quickly check your style.
 Use this in one of your projects? Include one of these badges in your readme to
 let people know that your code is using the standard style.
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
 ```markdown
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 ```
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
