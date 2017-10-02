@@ -12,10 +12,6 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.0",
     "tape": "^4.6.3"
   },
   "homepage": "https://github.com/feross/eslint-config-standard",
@@ -48,11 +44,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": ">=3.19.0",
-    "eslint-plugin-import": ">=2.2.0",
-    "eslint-plugin-node": ">=4.2.2",
-    "eslint-plugin-promise": ">=3.5.0",
-    "eslint-plugin-standard": ">=3.0.0"
+    "eslint": ">=3.19.0"
   },
   "repository": {
     "type": "git",
@@ -60,5 +52,11 @@
   },
   "scripts": {
     "test": "tape test/*.js"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
