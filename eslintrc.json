@@ -54,6 +54,7 @@
     "keyword-spacing": ["error", { "before": true, "after": true }],
     "new-cap": ["error", { "newIsCap": true, "capIsNew": false }],
     "new-parens": "error",
+    "multiline-comment-style": ["error", "starred-block"],
     "no-array-constructor": "error",
     "no-caller": "error",
     "no-class-assign": "error",
