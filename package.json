@@ -5,7 +5,7 @@
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
-    "url": "http://feross.org/"
+    "url": "https://feross.org"
   },
   "bugs": {
     "url": "https://github.com/standard/eslint-config-standard/issues"
