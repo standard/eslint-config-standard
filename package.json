@@ -14,9 +14,9 @@
     "eslint": "^4.18.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
-    "tape": "^4.6.3"
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "tape": "^4.8.0"
   },
   "homepage": "https://github.com/standard/eslint-config-standard",
   "keywords": [
