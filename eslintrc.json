@@ -67,7 +67,7 @@
     "new-cap": ["error", { "newIsCap": true, "capIsNew": false }],
     "new-parens": "error",
     "no-array-constructor": "error",
-    "no-bitwise": ["error", { "int32Hint": true }]
+    "no-bitwise": ["error", { "int32Hint": true }],
     "no-caller": "error",
     "no-class-assign": "error",
     "no-compare-neg-zero": "error",
