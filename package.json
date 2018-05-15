@@ -59,6 +59,7 @@
     "url": "git://github.com/standard/eslint-config-standard.git"
   },
   "scripts": {
-    "test": "tape test/*.js"
+    "lint": "eslint . --config=eslintrc.json",
+    "test": "npm run lint && tape test/*.js"
   }
 }
