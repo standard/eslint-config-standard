@@ -28,7 +28,7 @@ You can learn more about
 [Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) on the
 official ESLint website.
 
-To use the JavaScript Standard Style shareable config, follow these steps in your project directory:
+**If you want to set up the config automatically**, follow these steps in your project directory:
 
 1. `npx eslint --init`
 2. Select "Use a popular style guide."
