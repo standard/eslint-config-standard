@@ -28,13 +28,23 @@ You can learn more about
 [Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) on the
 official ESLint website.
 
-To use the JavaScript Standard Style shareable config, first run this:
+**If you want to set up the config automatically**, follow these steps in your project directory:
+
+1. `npx eslint --init`
+2. Select "Use a popular style guide."
+3. Select "Standard."
+4. Select a config file format.
+5. If prompted, confirm the installation of the necessary dependencies.
+
+The above steps will automatically set up an ESLint configuration and install the necessary dependencies for you.
+
+**If you want to set up the config manually**, run the following command:
 
 ```bash
 npm install --save-dev eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
 ```
 
-Then, add this to your .eslintrc file:
+Then, add this to your `.eslintrc` file:
 
 ```
 {
