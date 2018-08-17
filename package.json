@@ -14,7 +14,7 @@
     "eslint": "^5.0.0-alpha.2",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^3.0.1",
     "tape": "^4.8.0"
   },
