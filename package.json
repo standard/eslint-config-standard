@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "eslint": "^5.0.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^3.0.1",
@@ -49,10 +49,10 @@
   "main": "index.js",
   "peerDependencies": {
     "eslint": ">=5.0.0",
-    "eslint-plugin-import": ">=2.8.0",
     "eslint-plugin-node": ">=5.2.1",
     "eslint-plugin-promise": ">=3.6.0",
     "eslint-plugin-standard": ">=3.0.1"
+    "eslint-plugin-import": ">=2.13.0",
   },
   "repository": {
     "type": "git",
