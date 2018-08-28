@@ -1,6 +1,6 @@
 {
   "parserOptions": {
-    "ecmaVersion": 9,
+    "ecmaVersion": 2018,
     "ecmaFeatures": {
       "jsx": true
     },
