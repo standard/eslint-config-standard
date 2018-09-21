@@ -158,6 +158,7 @@
     "no-whitespace-before-property": "error",
     "no-with": "error",
     "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
     "object-property-newline": ["error", { "allowMultiplePropertiesPerLine": true }],
     "one-var": ["error", { "initialized": "never" }],
     "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
