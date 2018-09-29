@@ -97,8 +97,7 @@
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
     "no-iterator": "error",
-    "no-label-var": "error",
-    "no-labels": ["error", { "allowLoop": false, "allowSwitch": false }],
+    "no-labels": "error",
     "no-lone-blocks": "error",
     "no-mixed-operators": ["error", {
       "groups": [
