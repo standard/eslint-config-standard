@@ -20,9 +20,9 @@
   ],
 
   "globals": {
-    "document": false,
-    "navigator": false,
-    "window": false
+    "document": "readonly",
+    "navigator": "readonly",
+    "window": "readonly"
   },
 
   "rules": {
