@@ -11,7 +11,7 @@
     "url": "https://github.com/standard/eslint-config-standard/issues"
   },
   "devDependencies": {
-    "eslint": "^5.0.0",
+    "eslint": "^6.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.0",
     "eslint-plugin-promise": "^4.0.0",
