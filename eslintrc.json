@@ -103,6 +103,7 @@
     "no-label-var": "error",
     "no-labels": ["error", { "allowLoop": false, "allowSwitch": false }],
     "no-lone-blocks": "error",
+    "no-misleading-character-class": "error",
     "no-mixed-operators": ["error", {
       "groups": [
         ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
