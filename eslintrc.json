@@ -41,6 +41,7 @@
     }],
     "comma-spacing": ["error", { "before": false, "after": true }],
     "comma-style": ["error", "last"],
+    "computed-property-spacing": ["error", "never"],
     "constructor-super": "error",
     "curly": ["error", "multi-line"],
     "dot-location": ["error", "property"],
@@ -206,7 +207,6 @@
 
     "promise/param-names": "error",
 
-    "standard/computed-property-even-spacing": ["error", "even"],
-    "standard/no-callback-literal": "error",
+    "standard/no-callback-literal": "error"
   }
 }
