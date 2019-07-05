@@ -105,6 +105,7 @@
     "no-lone-blocks": "error",
     "no-misleading-character-class": "error",
     "no-prototype-builtins": "error",
+    "no-useless-catch": "error",
     "no-mixed-operators": ["error", {
       "groups": [
         ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
