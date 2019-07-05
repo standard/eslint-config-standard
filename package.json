@@ -48,10 +48,10 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint-plugin-node": ">=7.0.0",
     "eslint-plugin-promise": ">=4.0.0",
     "eslint": ">=6.0.1",
     "eslint-plugin-import": ">=2.18.0",
+    "eslint-plugin-node": ">=9.1.0",
     "eslint-plugin-standard": ">=4.0.0"
   },
   "repository": {
