@@ -104,6 +104,7 @@
     "no-labels": ["error", { "allowLoop": false, "allowSwitch": false }],
     "no-lone-blocks": "error",
     "no-misleading-character-class": "error",
+    "no-prototype-builtins": "error",
     "no-mixed-operators": ["error", {
       "groups": [
         ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
