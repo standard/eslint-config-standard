@@ -173,7 +173,6 @@
     "prefer-promise-reject-errors": "error",
     "quote-props": ["error", "as-needed"],
     "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
-    "require-atomic-updates": "error",
     "rest-spread-spacing": ["error", "never"],
     "semi": ["error", "never"],
     "semi-spacing": ["error", { "before": false, "after": true }],
