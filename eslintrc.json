@@ -169,7 +169,7 @@
     "one-var": ["error", { "initialized": "never" }],
     "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
     "padded-blocks": ["error", { "blocks": "never", "switches": "never", "classes": "never" }],
-    "prefer-const": "error",
+    "prefer-const": ["error", {"destructuring": "all"}],
     "prefer-promise-reject-errors": "error",
     "quote-props": ["error", "as-needed"],
     "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
