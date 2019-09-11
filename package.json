@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-standard",
   "description": "JavaScript Standard Style - ESLint Shareable Config",
-  "version": "13.0.1",
+  "version": "14.1.0",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
@@ -11,9 +11,9 @@
     "url": "https://github.com/standard/eslint-config-standard/issues"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
+    "eslint": "^6.2.2",
     "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "tape": "^4.8.0"
@@ -48,7 +48,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": ">=6.0.1",
+    "eslint": ">=6.2.2",
     "eslint-plugin-import": ">=2.18.0",
     "eslint-plugin-node": ">=9.1.0",
     "eslint-plugin-promise": ">=4.2.1",
