@@ -136,7 +136,6 @@
     "no-redeclare": ["error", { "builtinGlobals": false }],
     "no-regex-spaces": "error",
     "no-return-assign": ["error", "except-parens"],
-    "no-return-await": "error",
     "no-self-assign": ["error", { "props": true }],
     "no-self-compare": "error",
     "no-sequences": "error",
