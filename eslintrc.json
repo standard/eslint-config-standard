@@ -29,6 +29,7 @@
     "no-loss-of-precision": "error",
     "default-case-last": "error",
     "no-useless-backreference": "error",
+    "no-unreachable-loop": "error",
 
     "accessor-pairs": "error",
     "array-bracket-spacing": ["error", "never"],
