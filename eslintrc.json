@@ -28,6 +28,7 @@
   "rules": {
     "no-loss-of-precision": "error",
     "default-case-last": "error",
+    "no-useless-backreference": "error",
 
     "accessor-pairs": "error",
     "array-bracket-spacing": ["error", "never"],
