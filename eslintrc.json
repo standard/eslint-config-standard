@@ -30,6 +30,7 @@
     "default-case-last": "error",
     "no-useless-backreference": "error",
     "no-unreachable-loop": "error",
+    "multiline-ternary": ["error", "always-multiline"],
 
     "accessor-pairs": "error",
     "array-bracket-spacing": ["error", "never"],
