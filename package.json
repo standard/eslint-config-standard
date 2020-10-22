@@ -61,5 +61,19 @@
   "scripts": {
     "lint": "eslint . --config=eslintrc.json",
     "test": "npm run lint && tape test/*.js"
-  }
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/feross"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/feross"
+    },
+    {
+      "type": "consulting",
+      "url": "https://feross.org/support"
+    }
+  ]
 }
