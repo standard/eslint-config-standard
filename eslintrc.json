@@ -64,7 +64,7 @@
       "ImportDeclaration": 1,
       "flatTernaryExpressions": false,
       "ignoreComments": false,
-      "ignoredNodes": ["TemplateLiteral *"],
+      "ignoredNodes": ["TemplateLiteral *", "JSXElement *"],
       "offsetTernaryExpressions": true
     }],
     "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
