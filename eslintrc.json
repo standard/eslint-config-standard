@@ -64,7 +64,7 @@
       "ImportDeclaration": 1,
       "flatTernaryExpressions": false,
       "ignoreComments": false,
-      "ignoredNodes": ["TemplateLiteral *"],
+      "ignoredNodes": ["TemplateLiteral *", "JSXElement", "JSXElement > *", "JSXAttribute", "JSXIdentifier", "JSXNamespacedName", "JSXMemberExpression", "JSXSpreadAttribute", "JSXExpressionContainer", "JSXOpeningElement", "JSXClosingElement", "JSXFragment", "JSXOpeningFragment", "JSXClosingFragment", "JSXText", "JSXEmptyExpression", "JSXSpreadChild"],
       "offsetTernaryExpressions": true
     }],
     "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
