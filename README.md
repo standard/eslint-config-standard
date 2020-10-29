@@ -41,7 +41,7 @@ The above steps will automatically set up an ESLint configuration and install th
 **If you want to set up the config manually**, run the following command:
 
 ```bash
-npm install --save-dev eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
+npm install --save-dev eslint-config-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
 ```
 
 Then, add this to your `.eslintrc` file:

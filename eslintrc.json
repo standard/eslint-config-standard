@@ -15,8 +15,7 @@
   "plugins": [
     "import",
     "node",
-    "promise",
-    "standard"
+    "promise"
   ],
 
   "globals": {
@@ -231,9 +230,8 @@
     "node/no-new-require": "error",
     "node/no-path-concat": "error",
     "node/process-exit-as-throw": "error",
+    "node/no-callback-literal": "error",
 
-    "promise/param-names": "error",
-
-    "standard/no-callback-literal": "error"
+    "promise/param-names": "error"
   }
 }

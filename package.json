@@ -15,7 +15,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.2",
     "tape": "^5.0.1"
   },
   "homepage": "https://github.com/standard/eslint-config-standard",
@@ -51,8 +50,7 @@
     "eslint": "^7.12.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.2"
+    "eslint-plugin-promise": "^4.2.1"
   },
   "repository": {
     "type": "git",
