@@ -48,7 +48,7 @@
     }],
     "comma-spacing": ["error", { "before": false, "after": true }],
     "comma-style": ["error", "last"],
-    "computed-property-spacing": ["error", "never"],
+    "computed-property-spacing": ["error", "never", { "enforceForClassMembers": true }],
     "constructor-super": "error",
     "curly": ["error", "multi-line"],
     "default-case-last": "error",
