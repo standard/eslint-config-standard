@@ -35,8 +35,9 @@
     "block-spacing": ["error", "always"],
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     "camelcase": ["error", {
+      "allow": ["^UNSAFE_"],
       "properties": "never",
-      "allow": ["^UNSAFE_"]
+      "ignoreGlobals": true
     }],
     "comma-dangle": ["error", {
       "arrays": "never",
