@@ -26,7 +26,7 @@
   },
 
   "rules": {
-    "accessor-pairs": "error",
+    "accessor-pairs": ["error", { "setWithoutGet": true, "enforceForClassMembers": true }],
     "array-bracket-spacing": ["error", "never"],
     "array-callback-return": ["error", {
       "allowImplicit": false,
