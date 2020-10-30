@@ -25,7 +25,8 @@
   },
 
   "rules": {
-    "no-var": "error",
+    "no-var": "warn",
+
     "accessor-pairs": ["error", { "setWithoutGet": true, "enforceForClassMembers": true }],
     "array-bracket-spacing": ["error", "never"],
     "array-callback-return": ["error", {
