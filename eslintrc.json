@@ -238,6 +238,36 @@
     "node/no-path-concat": "error",
     "node/process-exit-as-throw": "error",
 
-    "promise/param-names": "error"
+    "promise/param-names": "error",
+
+    "unicorn/better-regex": "error",
+    "unicorn/catch-error-name": "error",
+    "unicorn/consistent-function-scoping": "error",
+    "unicorn/custom-error-definition": "error",
+    "unicorn/empty-brace-spaces": "error",
+    "unicorn/error-message": "error",
+    "unicorn/escape-case": "error",
+    "unicorn/new-for-builtins": "error",
+    "unicorn/no-array-callback-reference": "error",
+    "unicorn/no-hex-escape": "error",
+    "unicorn/no-instanceof-array": "error",
+    "unicorn/no-object-as-default-parameter": "error",
+    "unicorn/no-unreadable-array-destructuring": "error",
+    "unicorn/no-unsafe-regex": "error",
+    "unicorn/no-zero-fractions": "error",
+    "unicorn/number-literal-case": "error",
+    "unicorn/numeric-separators-style": "error",
+    "unicorn/prefer-add-event-listener": "error",
+    "unicorn/prefer-dom-node-dataset": "error",
+    "unicorn/prefer-includes": "error",
+    "unicorn/prefer-keyboard-event-key": "error",
+    "unicorn/prefer-math-trunc": "error",
+    "unicorn/prefer-modern-dom-apis": "error",
+    "unicorn/prefer-number-properties": "error",
+    "unicorn/prefer-optional-catch-binding": "error",
+    "unicorn/prefer-regexp-test": "error",
+    "unicorn/prefer-type-error": "error",
+    "unicorn/prevent-abbreviations": "error",
+    "unicorn/throw-new-error": "error"
   }
 }
