@@ -9,6 +9,6 @@ test('test basic properties of config', function (t) {
   t.end()
 })
 
-function isObject (obj) {
-  return typeof obj === 'object' && obj !== null
+function isObject (object) {
+  return typeof object === 'object' && object !== null
 }
