@@ -1,7 +1,7 @@
-# eslint-config-standard [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
+# eslint-config-standard [![CI][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
-[travis-image]: https://img.shields.io/travis/standard/eslint-config-standard/master.svg
-[travis-url]: https://travis-ci.org/standard/eslint-config-standard
+[ci-image]: https://github.com/standard/eslint-config-standard/actions/workflows/ci.yml/badge.svg?branch=master
+[ci-url]: https://github.com/standard/eslint-config-standard/actions/workflows/ci.yml
 [npm-image]: https://img.shields.io/npm/v/eslint-config-standard.svg
 [npm-url]: https://npmjs.org/package/eslint-config-standard
 [downloads-image]: https://img.shields.io/npm/dm/eslint-config-standard.svg
