@@ -11,10 +11,10 @@
     "url": "https://github.com/standard/eslint-config-standard/issues"
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^8.0.1",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-promise": "^5.1.0",
     "tape": "^5.0.1"
   },
   "homepage": "https://github.com/standard/eslint-config-standard",
@@ -47,10 +47,10 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^8.0.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^8.0.1",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1 || ^5.0.0"
+    "eslint-plugin-promise": "^5.1.0"
   },
   "repository": {
     "type": "git",
