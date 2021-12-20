@@ -14,7 +14,7 @@
 
   "plugins": [
     "import",
-    "node",
+    "n",
     "promise"
   ],
 
