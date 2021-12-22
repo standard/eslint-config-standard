@@ -8,6 +8,13 @@ on:
 
 jobs:
   ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        eslint-plugin-promise:
+         - 4
+         - 5
+         - 6
     runs-on: 'ubuntu-latest'
     steps:
       - uses: 'actions/checkout@v2'
@@ -27,6 +34,9 @@ jobs:
 
       - name: 'Install dependencies'
         run: 'npm install'
+
+      - name: 'Install eslint-plugin-promise'
+        run: npm install -D eslint-plugin-promise@${{matrix.eslint-plugin-promise}}
 
       - name: 'Run tests'
         run: 'npm test'
