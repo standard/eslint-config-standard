@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    labels:
+      - "dependency"
+    # Always increase the version requirement to match the new version.
+    versioning-strategy: increase
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    ignore:
+      - dependency-name: "actions/*"
+        update-types:
+          ["version-update:semver-minor", "version-update:semver-patch"]
+    schedule:
+      interval: "monthly"
+    labels:
+      - "github-actions"
