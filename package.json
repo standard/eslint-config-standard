@@ -13,7 +13,7 @@
   "devDependencies": {
     "@types/eslint": "^8.4.1",
     "@types/tape": "^4.13.2",
-    "eslint": "^8.13.0",
+    "eslint": "^8.35.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-n": "^15.1.0",
     "eslint-plugin-promise": "^6.0.0",
