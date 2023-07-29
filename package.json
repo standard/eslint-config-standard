@@ -14,8 +14,11 @@
     "node": ">=12.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
     "@types/eslint": "^8.4.1",
     "@types/tape": "^4.13.2",
+    "commitlint-config-standard": "github:standard/commitlint-config-standard",
     "eslint": "^8.13.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-n": "^16.0.0",
