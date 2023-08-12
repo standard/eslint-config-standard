@@ -13,6 +13,13 @@
   "engines": {
     "node": ">=12.0.0"
   },
+  "files": [
+    ".eslintrc.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
