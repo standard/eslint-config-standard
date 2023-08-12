@@ -3,6 +3,27 @@ on:
   push: {}
 
 jobs:
+  publish:
+    needs: ci
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: navikt/github-app-token-generator@v1
+        id: get-token
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false # for later steps to use a different authentication
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+      - run: npm ci
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
   # The ci-matrix job ends up as multiple jobs and therefore as multiple checks.
   # Each check's name ends up with the node version appended.
   # If we were to use those checks as required checks, we would have to occasionally bump them.

@@ -30,6 +30,8 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "semantic-release": "21.0.7",
+    "semantic-release-standard": "github:standard/semantic-release",
     "tape": "^5.5.2"
   },
   "homepage": "https://github.com/standard/eslint-config-standard",
