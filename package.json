@@ -20,7 +20,7 @@
     "@types/tape": "^4.13.2",
     "commitlint-config-standard": "github:standard/commitlint-config-standard",
     "eslint": "^8.13.0",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "tape": "^5.5.2"
