@@ -3,6 +3,10 @@
   "extends": [":automergeMinor"],
   "packageRules": [
     {
+      "matchDepTypes": ["peerDependencies"],
+      "enabled": false
+    },
+    {
       "matchPackagePrefixes": ["@types/"],
       "automerge": true
     },
