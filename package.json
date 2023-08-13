@@ -26,6 +26,7 @@
     "@types/eslint": "8.44.2",
     "@types/tape": "5.6.0",
     "commitlint-config-standard": "github:standard/commitlint-config-standard",
+    "editorconfig-checker": "5.1.1",
     "eslint": "8.47.0",
     "eslint-plugin-import": "2.28.0",
     "eslint-plugin-n": "16.0.1",
@@ -75,9 +76,10 @@
     "url": "git://github.com/standard/eslint-config-standard.git"
   },
   "scripts": {
+    "editorconfig": "editorconfig-checker",
     "lint": "eslint .",
     "unit": "tape test/*.js",
-    "test": "run-s lint unit"
+    "test": "run-s editorconfig lint unit"
   },
   "funding": [
     {
