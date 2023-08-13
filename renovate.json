@@ -1,0 +1,14 @@
+{
+  "rangeStrategy": "pin",
+  "extends": [":automergeMinor"],
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["@types/"],
+      "automerge": true
+    },
+    {
+      "matchPackagePrefixes": ["@commitlint/"],
+      "groupName": "@commitlint packages"
+    }
+  ]
+}
