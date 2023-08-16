@@ -1,5 +1,5 @@
-const config = require('../')
-const test = require('tape')
+import config from '..'
+import test from 'tape'
 
 test('test basic properties of config', function (t) {
   t.ok(isObject(config.parserOptions))
@@ -9,6 +9,6 @@ test('test basic properties of config', function (t) {
   t.end()
 })
 
-function isObject (obj) {
+function isObject (obj: unknown): boolean {
   return typeof obj === 'object' && obj !== null
 }

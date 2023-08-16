@@ -1,0 +1,12 @@
+{
+  "extends": "tsconfigs/nodejs-module",
+  "compilerOptions": {
+    "outDir": "lib"
+  },
+  "include": [
+    ".eslintrc.js",
+    "commitlint.config.js",
+    "src/**/*.ts"
+  ]
+}
+
