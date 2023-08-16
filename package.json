@@ -26,7 +26,7 @@
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
     "@types/eslint": "8.44.2",
-    "@types/tape": "5.6.0",
+    "ava": "5.3.1",
     "commitlint-config-standard": "github:standard/commitlint-config-standard",
     "editorconfig-checker": "5.1.1",
     "eslint": "8.47.0",
@@ -37,7 +37,6 @@
     "npm-run-all": "4.1.5",
     "semantic-release": "21.0.7",
     "semantic-release-standard": "github:standard/semantic-release",
-    "tape": "5.6.6",
     "tsconfigs": "5.0.0",
     "typescript": "5.1.6"
   },
@@ -85,7 +84,7 @@
     "editorconfig": "editorconfig-checker",
     "compile": "tsc",
     "lint": "eslint .",
-    "unit": "tape lib/test/*.js",
+    "unit": "ava",
     "test": "run-s editorconfig compile lint unit"
   },
   "funding": [

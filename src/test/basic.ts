@@ -1,12 +1,11 @@
 import config from '..'
-import test from 'tape'
+import test from 'ava'
 
 test('test basic properties of config', function (t) {
-  t.ok(isObject(config.parserOptions))
-  t.ok(isObject(config.env))
-  t.ok(isObject(config.globals))
-  t.ok(isObject(config.rules))
-  t.end()
+  t.true(isObject(config.parserOptions))
+  t.true(isObject(config.env))
+  t.true(isObject(config.globals))
+  t.true(isObject(config.rules))
 })
 
 function isObject (obj: unknown): boolean {
