@@ -1,7 +1,8 @@
-const { ESLint } = require('eslint')
-const test = require('tape')
+import test from 'tape'
+import { ESLint } from 'eslint'
+import config from '../index'
 
-const eslint = new ESLint()
+const eslint = new ESLint({ baseConfig: config })
 
 test('load config in eslint to validate all rule syntax is correct', async function (t) {
   const code = 'const foo = 1\nconst bar = function () {}\nbar(foo)\n'
