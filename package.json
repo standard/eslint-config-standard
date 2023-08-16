@@ -22,6 +22,7 @@
     "lib/index.js"
   ],
   "devDependencies": {
+    "@arkweid/lefthook": "0.7.7",
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
     "@types/eslint": "8.44.2",
