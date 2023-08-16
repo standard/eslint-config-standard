@@ -81,11 +81,12 @@
     "url": "git://github.com/standard/eslint-config-standard.git"
   },
   "scripts": {
+    "clean-artifacts": "git clean lib -X --force",
     "editorconfig": "editorconfig-checker",
     "compile": "tsc",
     "lint": "eslint .",
     "unit": "ava",
-    "test": "run-s editorconfig compile lint unit"
+    "test": "run-s clean-artifacts editorconfig compile lint unit"
   },
   "funding": [
     {
