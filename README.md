@@ -9,7 +9,7 @@
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [standard-url]: https://standardjs.com
 
-#### The ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) of [JavaScript Standard Style](http://standardjs.com)
+#### The ESLint config of [JavaScript Standard Style](http://standardjs.com)
 
 [![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
@@ -17,39 +17,24 @@ This module is for advanced users. You probably want to use [`standard`](http://
 
 ## Usage
 
-Shareable configs are designed to work with the `extends` feature of `.eslintrc` files.
-You can learn more about
-[Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) on the
-official ESLint website.
-
-**If you want to set up the config automatically**, follow these steps in your project directory:
-
-1. `npx eslint --init`
-2. Select "Use a popular style guide."
-3. Select "Standard."
-4. Select a config file format.
-5. If prompted, confirm the installation of the necessary dependencies.
-
-The above steps will automatically set up an ESLint configuration and install the necessary dependencies for you.
-
-**If you want to set up the config manually**, run the following command:
+This package exports [a flat ESLint configuration](https://eslint.org/docs/latest/use/configure/configuration-files-new).
 
 ```bash
-npm install --save-dev eslint-config-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-n
+npm install --save-dev eslint eslint-config-standard
 ```
 
-Then, add this to your `.eslintrc` file:
 
+Example `eslint.config.js`:
+```js
+const standard = require('eslint-config-standard')
+
+module.exports = [
+    standard,
+    {
+      // your overrides here
+    }
+] 
 ```
-{
-  "extends": "standard"
-}
-```
-
-*Note: We omitted the `eslint-config-` prefix since it is automatically assumed by ESLint.*
-
-You can override settings from the shareable config by adding them directly into your
-`.eslintrc` file.
 
 ### Looking for something easier than this?
 
