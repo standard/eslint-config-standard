@@ -13,13 +13,7 @@
 
 [![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
-## Install
-
 This module is for advanced users. You probably want to use [`standard`](http://standardjs.com) instead :)
-
-```bash
-npm install eslint-config-standard
-```
 
 ## Usage
 
