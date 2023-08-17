@@ -1,22 +1,37 @@
 import actual from '..'
 import test from 'ava'
 
+// @ts-expect-error missing type
+import pluginN from 'eslint-plugin-n'
+// @ts-expect-error missing type
+import * as pluginImport from 'eslint-plugin-import'
+// @ts-expect-error missing type
+import pluginPromise from 'eslint-plugin-promise'
+import globals from 'globals'
+
 test('export equality', function (t) {
   const expected = {
-    parserOptions: {
+    languageOptions: {
       ecmaVersion: 2022,
-      ecmaFeatures: { jsx: true },
-      sourceType: 'module'
+      sourceType: 'module',
+
+      parserOptions: {
+        ecmaFeatures: { jsx: true }
+      },
+
+      globals: {
+        ...globals.es2021,
+        ...globals.node,
+        document: 'readonly',
+        navigator: 'readonly',
+        window: 'readonly'
+      }
     },
 
-    env: { es2021: true, node: true },
-
-    plugins: ['import', 'n', 'promise'],
-
-    globals: {
-      document: 'readonly',
-      navigator: 'readonly',
-      window: 'readonly'
+    plugins: {
+      n: pluginN,
+      promise: pluginPromise,
+      import: pluginImport
     },
 
     rules: {
