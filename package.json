@@ -37,7 +37,7 @@
     "semantic-release": "21.1.1",
     "semantic-release-standard": "github:standard/semantic-release",
     "tsconfigs": "5.0.0",
-    "typescript": "5.1.6"
+    "typescript": "5.2.2"
   },
   "homepage": "https://github.com/standard/eslint-config-standard",
   "keywords": [
