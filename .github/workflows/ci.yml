@@ -13,7 +13,7 @@ jobs:
         with:
           app-id: ${{ secrets.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: false # for later steps to use a different authentication
       - uses: actions/setup-node@v3
@@ -40,7 +40,7 @@ jobs:
       matrix:
         node-version: ${{ fromJson(needs.get-supported-node-versions.outputs.versions) }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # for commit linting
       - uses: actions/setup-node@v3
@@ -54,7 +54,7 @@ jobs:
   get-supported-node-versions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - id: get
         run: |
           set -euxo pipefail
