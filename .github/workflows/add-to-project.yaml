@@ -1,0 +1,10 @@
+on:
+  pull_request:
+    types: [opened]
+  issues:
+    types: [opened]
+
+jobs:
+  add-to-project:
+    uses: standard/.github/workflows/add-to-project@master
+    secrets: inherit
