@@ -1,18 +1,9 @@
 {
-  "rangeStrategy": "pin",
-  "extends": [":automergeMinor"],
+  "extends": ["github>standard/renovate-config:renovate.json5"],
   "packageRules": [
     {
       "matchDepTypes": ["peerDependencies", "engines"],
       "enabled": false
-    },
-    {
-      "matchPackagePrefixes": ["@types/"],
-      "automerge": true
-    },
-    {
-      "matchPackagePrefixes": ["@commitlint/"],
-      "groupName": "@commitlint packages"
     }
   ]
 }
