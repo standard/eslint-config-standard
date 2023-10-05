@@ -99,7 +99,7 @@
     }
   ],
   "dependencies": {
-    "globals": "13.22.0",
+    "globals": "13.23.0",
     "eslint-plugin-import": "2.28.1",
     "eslint-plugin-n": "16.1.0",
     "eslint-plugin-promise": "6.1.1"
