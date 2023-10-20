@@ -22,8 +22,8 @@
   ],
   "devDependencies": {
     "@arkweid/lefthook": "0.7.7",
-    "@commitlint/cli": "17.8.0",
-    "@commitlint/config-conventional": "17.8.0",
+    "@commitlint/cli": "17.8.1",
+    "@commitlint/config-conventional": "17.8.1",
     "@types/eslint": "8.44.6",
     "ava": "5.3.1",
     "commitlint-config-standard": "github:standard/commitlint-config-standard",
