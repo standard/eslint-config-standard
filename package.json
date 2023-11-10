@@ -31,7 +31,7 @@
     "eslint": "8.53.0",
     "eslint-config-standard-with-typescript": "39.1.1",
     "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-n": "16.3.0",
+    "eslint-plugin-n": "16.3.1",
     "eslint-plugin-promise": "6.1.1",
     "npm-run-all": "4.1.5",
     "semantic-release": "22.0.7",
@@ -101,7 +101,7 @@
   "dependencies": {
     "globals": "13.23.0",
     "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-n": "16.3.0",
+    "eslint-plugin-n": "16.3.1",
     "eslint-plugin-promise": "6.1.1"
   }
 }
