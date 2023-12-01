@@ -28,7 +28,7 @@
     "ava": "5.3.1",
     "commitlint-config-standard": "github:standard/commitlint-config-standard",
     "editorconfig-checker": "5.1.2",
-    "eslint": "8.54.0",
+    "eslint": "8.55.0",
     "eslint-config-standard-with-typescript": "39.1.1",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-n": "16.3.1",
