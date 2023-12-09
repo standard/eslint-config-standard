@@ -25,7 +25,7 @@
     "@commitlint/cli": "17.8.1",
     "@commitlint/config-conventional": "17.8.1",
     "@types/eslint": "8.44.8",
-    "ava": "5.3.1",
+    "ava": "6.0.1",
     "commitlint-config-standard": "github:standard/commitlint-config-standard",
     "editorconfig-checker": "5.1.2",
     "eslint": "8.55.0",
