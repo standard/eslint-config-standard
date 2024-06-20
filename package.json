@@ -101,7 +101,7 @@
   "dependencies": {
     "globals": "13.24.0",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-n": "16.6.2",
+    "eslint-plugin-n": "^16 >=16.6 || >=17.9",
     "eslint-plugin-promise": "6.2.0"
   }
 }
