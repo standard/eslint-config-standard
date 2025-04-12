@@ -1,7 +1,10 @@
 {
   "extends": "tsconfigs/nodejs-module",
   "compilerOptions": {
-    "outDir": "lib"
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "lib",
+    "skipLibCheck": true
   },
   "include": [
     ".eslintrc.js",
@@ -9,4 +12,3 @@
     "src/**/*.ts"
   ]
 }
-

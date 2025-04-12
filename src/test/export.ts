@@ -3,8 +3,7 @@ import test from 'ava'
 
 // @ts-expect-error missing type
 import pluginN from 'eslint-plugin-n'
-// @ts-expect-error missing type
-import * as pluginImport from 'eslint-plugin-import'
+import pluginImportX from 'eslint-plugin-import-x'
 // @ts-expect-error missing type
 import pluginPromise from 'eslint-plugin-promise'
 import globals from 'globals'
@@ -31,7 +30,7 @@ test('export equality', function (t) {
     plugins: {
       n: pluginN,
       promise: pluginPromise,
-      import: pluginImport
+      'import-x': pluginImportX
     },
 
     rules: {
@@ -252,12 +251,12 @@ test('export equality', function (t) {
       'yield-star-spacing': ['error', 'both'],
       yoda: ['error', 'never'],
 
-      'import/export': 'error',
-      'import/first': 'error',
-      'import/no-absolute-path': ['error', { esmodule: true, commonjs: true, amd: false }],
-      'import/no-duplicates': 'error',
-      'import/no-named-default': 'error',
-      'import/no-webpack-loader-syntax': 'error',
+      'import-x/export': 'error',
+      'import-x/first': 'error',
+      'import-x/no-absolute-path': ['error', { esmodule: true, commonjs: true, amd: false }],
+      'import-x/no-duplicates': 'error',
+      'import-x/no-named-default': 'error',
+      'import-x/no-webpack-loader-syntax': 'error',
 
       'n/handle-callback-err': ['error', '^(err|error)$'],
       'n/no-callback-literal': 'error',
