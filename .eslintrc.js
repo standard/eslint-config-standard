@@ -2,7 +2,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.js', '*.ts'],
-      extends: 'eslint-config-standard-with-typescript',
+      extends: 'love',
       parserOptions: {
         project: './tsconfig.json'
       }
