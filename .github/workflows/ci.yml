@@ -1,63 +1,55 @@
+name: CI
+
 on:
-  pull_request: {}
-  push: {}
+  - push
+  - pull_request
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  publish:
-    needs: ci
-    if: github.ref == 'refs/heads/master'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: navikt/github-app-token-generator@v1
-        id: get-token
-        with:
-          app-id: ${{ secrets.BOT_APP_ID }}
-          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: false # for later steps to use a different authentication
-      - uses: actions/setup-node@v4
-        with:
-          node-version: latest
-      - run: npm ci
-      - run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-  # The ci-matrix job ends up as multiple jobs and therefore as multiple checks.
-  # Each check's name ends up with the node version appended.
-  # If we were to use those checks as required checks, we would have to occasionally bump them.
-  # This job allows us to have a single check that we don't have to bump.
   ci:
-    needs: ci-matrix
-    runs-on: ubuntu-latest
-    steps:
-      - run: exit 0
-  ci-matrix:
-    needs: get-supported-node-versions
-    runs-on: ubuntu-latest
+    name: Lint and Test with Node.js ${{ matrix.node }} on ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: ${{ fromJson(needs.get-supported-node-versions.outputs.versions) }}
+        node:
+          - 18
+          - 20
+          - 22
+        os:
+          - macos-latest
+          - windows-latest
+          - ubuntu-latest
+      fail-fast: false
+    runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repo
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+
+      - name: Setup Node.js ${{ matrix.node }}
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4
         with:
-          fetch-depth: 0 # for commit linting
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm --global install npm@latest
-      - run: npm ci
-      - uses: wagoid/commitlint-github-action@v5
-      - run: npm test
-  get-supported-node-versions:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - id: get
+          node-version: ${{ matrix.node }}
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn --immutable
+
+      - name: Build, Lint and Test
         run: |
-          set -euxo pipefail
-          active_versions=$(bash get-node-supported-versions.sh)
-          echo "active=$active_versions" >> "$GITHUB_OUTPUT"
-    outputs:
-      versions: ${{ steps.get.outputs.active }}
+          yarn build
+          yarn lint
+          yarn test
+        env:
+          PARSER_NO_WATCH: true
+
+      - name: Codecov
+        uses: codecov/codecov-action@0565863a31f2c772f9f0395002a31e3f06189574 # v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Run codacy-coverage-reporter
+        uses: codacy/codacy-coverage-reporter-action@89d6c85cfafaec52c72b6c5e8b2878d33104c699 # v1.3.0
+        with:
+          api-token: ${{ secrets.CODACY_API_TOKEN }}

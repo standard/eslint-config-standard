@@ -1,14 +1,7 @@
 {
-  "extends": "tsconfigs/nodejs-module",
+  "extends": "./tsconfig.base",
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "outDir": "lib",
-    "skipLibCheck": true
+    "outDir": "lib"
   },
-  "include": [
-    ".eslintrc.js",
-    "commitlint.config.js",
-    "src/**/*.ts"
-  ]
+  "include": ["index.ts", "shim.d.ts"]
 }

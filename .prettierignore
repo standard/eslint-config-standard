@@ -1,0 +1,6 @@
+.type-coverage
+.vercel
+.yarn
+coverage
+dist
+lib

@@ -1,45 +1,38 @@
 {
-  "name": "eslint-config-standard",
+  "name": "@eslinter/eslint-config-standard",
+  "version": "0.0.0",
+  "type": "module",
   "description": "JavaScript Standard Style - ESLint Shareable Config",
-  "version": "17.1.0",
-  "author": {
-    "name": "Feross Aboukhadijeh",
-    "email": "feross@feross.org",
-    "url": "https://feross.org"
-  },
-  "bugs": {
-    "url": "https://github.com/standard/eslint-config-standard/issues"
-  },
+  "repository": "git+https://github.com/eslinter/eslint-config-standard.git",
+  "author": "JounQin <admin@1stg.me> (https://www.1stG.me)",
+  "funding": "https://github.com/sponsors/JounQin",
+  "license": "MIT",
+  "packageManager": "yarn@4.9.1",
   "engines": {
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
-  "files": [
-    "CHANGELOG.md",
-    "LICENSE",
-    "README.md",
-    "lib/index.d.ts",
-    "lib/index.js"
-  ],
-  "devDependencies": {
-    "@arkweid/lefthook": "0.7.7",
-    "@commitlint/cli": "18.6.1",
-    "@commitlint/config-conventional": "18.6.3",
-    "@types/eslint": "8.56.12",
-    "ava": "6.1.3",
-    "commitlint-config-standard": "github:standard/commitlint-config-standard",
-    "editorconfig-checker": "5.1.8",
-    "eslint": "8.57.0",
-    "eslint-config-love": "47.0.0",
-    "eslint-plugin-import-x": "4.10.2",
-    "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-promise": "6.6.0",
-    "npm-run-all": "4.1.5",
-    "semantic-release": "22.0.12",
-    "semantic-release-standard": "github:standard/semantic-release",
-    "tsconfigs": "5.0.0",
-    "typescript": "5.5.4"
+  "main": "./lib/index.cjs",
+  "types": "./index.d.cts",
+  "module": "./lib/index.js",
+  "exports": {
+    "import": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "module-sync": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "require": {
+      "types": "./index.d.cts",
+      "default": "./lib/index.cjs"
+    }
   },
-  "homepage": "https://github.com/standard/eslint-config-standard",
+  "files": [
+    "index.d.cts",
+    "lib",
+    "!**/*.tsbuildinfo"
+  ],
   "keywords": [
     "JavaScript Standard Style",
     "check",
@@ -66,42 +59,57 @@
     "style linter",
     "verify"
   ],
-  "license": "MIT",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "run-p 'build:*'",
+    "build:r": "r -f cjs",
+    "build:tsc": "tsc -b",
+    "clean": "git clean lib -X --force",
+    "format": "prettier --write .",
+    "lint": "run-p 'lint:*'",
+    "lint:es": "eslint .",
+    "lint:tsc": "tsc -b --noEmit",
+    "prepare": "simple-git-hooks && yarn-berry-deduplicate || exit 0",
+    "release": "clean-pkg-json && changeset publish",
+    "test": "vitest run",
+    "typecov": "type-coverage"
+  },
   "peerDependencies": {
     "eslint": "^8.57.0 || ^9.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/standard/eslint-config-standard.git"
-  },
-  "scripts": {
-    "clean-artifacts": "git clean lib -X --force",
-    "editorconfig": "editorconfig-checker",
-    "compile": "tsc",
-    "lint": "eslint .",
-    "unit": "ava",
-    "test": "run-s clean-artifacts editorconfig compile lint unit"
-  },
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/feross"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/feross"
-    },
-    {
-      "type": "consulting",
-      "url": "https://feross.org/support"
-    }
-  ],
   "dependencies": {
-    "eslint-plugin-import-x": "4.10.2",
-    "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-promise": "6.6.0",
-    "globals": "13.24.0"
+    "eslint-plugin-import-x": "^4.10.2",
+    "eslint-plugin-n": "^17.17.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^16.0.0"
+  },
+  "devDependencies": {
+    "@1stg/common-config": "^12.0.0",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@commitlint/cli": "^19.8.0",
+    "@pkgr/rollup": "^6.0.2",
+    "@vitest/coverage-istanbul": "3.1.1",
+    "clean-pkg-json": "^1.2.1",
+    "eslint": "^9.24.0",
+    "lint-staged": "^15.5.1",
+    "npm-run-all2": "^7.0.2",
+    "prettier": "^3.5.3",
+    "simple-git-hooks": "^2.12.1",
+    "type-coverage": "^2.29.7",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1",
+    "yarn-berry-deduplicate": "^6.1.1"
+  },
+  "resolutions": {
+    "es5-ext": "npm:@unes/es5-ext@latest",
+    "prettier": "^3.5.3"
+  },
+  "typeCoverage": {
+    "atLeast": 100,
+    "cache": true,
+    "detail": true,
+    "showRelativePath": true,
+    "strict": true,
+    "update": true
   }
 }

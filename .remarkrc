@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "@1stg/preset",
+    [
+      "lint-no-file-name-irregular-characters",
+      "-_.\\dA-Za-z"
+    ]
+  ]
+}

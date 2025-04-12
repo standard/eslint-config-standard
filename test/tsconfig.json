@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.base",
+  "compilerOptions": {
+    "paths": {
+      "@eslinter/eslint-config-standard": ["../index.ts"]
+    }
+  },
+  "include": [".", "./global.d.ts", "../shim.d.ts"]
+}

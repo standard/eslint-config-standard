@@ -1,2 +1,10 @@
-/node_modules
-/lib
+.*cache
+.type-coverage
+.vercel
+.yarn/*
+!.yarn/plugins
+!.yarn/releases
+coverage
+dist
+lib
+node_modules

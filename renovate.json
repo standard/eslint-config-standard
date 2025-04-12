@@ -1,9 +1,7 @@
 {
-  "extends": ["github>standard/renovate-config:renovate.json5"],
-  "packageRules": [
-    {
-      "matchDepTypes": ["peerDependencies", "engines"],
-      "enabled": false
-    }
-  ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>1stG/configs"
+  ],
+  "forkProcessing": "enabled"
 }

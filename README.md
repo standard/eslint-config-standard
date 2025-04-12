@@ -1,70 +1,83 @@
-# eslint-config-standard [![CI][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
+# @eslinter/eslint-config-standard
 
-[ci-image]: https://github.com/standard/eslint-config-standard/actions/workflows/ci.yml/badge.svg?branch=master
-[ci-url]: https://github.com/standard/eslint-config-standard/actions/workflows/ci.yml
-[npm-image]: https://img.shields.io/npm/v/eslint-config-standard.svg
-[npm-url]: https://npmjs.org/package/eslint-config-standard
-[downloads-image]: https://img.shields.io/npm/dm/eslint-config-standard.svg
-[downloads-url]: https://npmjs.org/package/eslint-config-standard
-[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
-[standard-url]: https://standardjs.com
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/eslinter/eslint-config-standard/ci.yml?branch=master)](https://github.com/eslinter/eslint-config-standard/actions/workflows/ci.yml?query=branch%3Amaster)
+[![Codecov](https://img.shields.io/codecov/c/github/eslinter/eslint-config-standard.svg)](https://codecov.io/gh/eslinter/eslint-config-standard)
+[![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Feslinters%2Feslint-config-standard%2Fmaster%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
+[![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/eslinter/eslint-config-standard)](https://coderabbit.ai)
+[![npm](https://img.shields.io/npm/v/@eslinter/eslint-config-standard.svg)](https://www.npmjs.com/package/@eslinter/eslint-config-standard)
+[![GitHub Release](https://img.shields.io/github/release/eslinter/eslint-config-standard)](https://github.com/eslinter/eslint-config-standard/releases)
 
-#### The ESLint config of [JavaScript Standard Style](http://standardjs.com)
+[![Conventional Commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![changesets](https://img.shields.io/badge/maintained%20with-changesets-176de3.svg)](https://github.com/changesets/changesets)
 
-[![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
+## The ESLint config of [JavaScript Standard Style][standardjs]
 
-This module is for advanced users. You probably want to use [`standard`](http://standardjs.com) instead :)
+[![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/standard/standard/master/badge.svg)][standardjs]
+
+This module is for advanced users. You probably want to use [`standard`][standardjs] instead :)
 
 ## Usage
 
 This package exports [a flat ESLint configuration](https://eslint.org/docs/latest/use/configure/configuration-files-new).
 
 ```bash
-npm install --save-dev eslint eslint-config-standard
-```
+# npm
+npm install -D eslint @eslinter/eslint-config-standard
 
+# yarn
+yarn add -D eslint @eslinter/eslint-config-standard
+
+# pnpm
+pnpm add -D eslint @eslinter/eslint-config-standard
+
+# bun
+bun add -D eslint @eslinter/eslint-config-standard
+```
 
 Example `eslint.config.js`:
+
 ```js
-const standard = require('eslint-config-standard')
+import standard from '@eslinter/eslint-config-standard'
 
-module.exports = [
-    standard,
-    {
-      // your overrides here
-    }
-] 
-```
-
-### Looking for something easier than this?
-
-The easiest way to use JavaScript Standard Style to check your code is to use the
-[`standard`](http://standardjs.com) package. This comes with a global
-Node command line program (`standard`) that you can run or add to your `npm test` script
-to quickly check your style.
-
-## Badge
-
-Use this in one of your projects? Include one of these badges in your readme to
-let people know that your code is using the standard style.
-
-[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
-
-```markdown
-[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
-```
-
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
-
-```markdown
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+export default [
+  standard,
+  {
+    // your overrides here
+  },
+]
 ```
 
 ## Learn more
 
 For the full listing of rules, editor plugins, FAQs, and more, visit the main
-[JavaScript Standard Style repo](http://standardjs.com).
+[JavaScript Standard Style repo][standardjs].
+
+[![Sponsors](https://raw.githubusercontent.com/1stG/static/master/sponsors.svg)](https://github.com/sponsors/JounQin)
+
+## Sponsors
+
+| 1stG                                                                                                                   | RxTS                                                                                                                   | UnTS                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [![1stG Open Collective sponsors](https://opencollective.com/1stG/organizations.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective sponsors](https://opencollective.com/rxts/organizations.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective sponsors](https://opencollective.com/unts/organizations.svg)](https://opencollective.com/unts) |
+
+## Backers
+
+| 1stG                                                                                                                | RxTS                                                                                                                | UnTS                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| [![1stG Open Collective backers](https://opencollective.com/1stG/individuals.svg)](https://opencollective.com/1stG) | [![RxTS Open Collective backers](https://opencollective.com/rxts/individuals.svg)](https://opencollective.com/rxts) | [![UnTS Open Collective backers](https://opencollective.com/unts/individuals.svg)](https://opencollective.com/unts) |
+
+## Changelog
+
+Detailed changes for each release are documented in [CHANGELOG.md](./CHANGELOG.md).
 
 ## License
 
-MIT. Copyright (c) [Feross Aboukhadijeh](http://feross.org).
+[MIT][] © [JounQin][]@[1stG.me][]
+
+[1stG.me]: https://www.1stG.me
+[JounQin]: https://GitHub.com/JounQin
+[MIT]: http://opensource.org/licenses/MIT
+[standardjs]: http://standardjs.com
