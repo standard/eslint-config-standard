@@ -48,7 +48,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm --global install npm@latest
       - run: npm ci
-      - uses: wagoid/commitlint-github-action@v5
+      - uses: wagoid/commitlint-github-action@v6
       - run: npm test
   get-supported-node-versions:
     runs-on: ubuntu-latest
