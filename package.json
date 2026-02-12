@@ -29,7 +29,7 @@
     "commitlint-config-standard": "github:standard/commitlint-config-standard",
     "editorconfig-checker": "5.1.8",
     "eslint": "8.55.0",
-    "eslint-config-standard-with-typescript": "42.0.0",
+    "eslint-config-standard-with-typescript": "43.0.1",
     "eslint-plugin-import": "2.30.0",
     "eslint-plugin-n": "16.6.2",
     "eslint-plugin-promise": "6.6.0",
