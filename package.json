@@ -74,7 +74,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/standard/eslint-config-standard.git"
+    "url": "git+https://github.com/standard/eslint-config-standard.git"
   },
   "scripts": {
     "clean-artifacts": "git clean lib -X --force",
